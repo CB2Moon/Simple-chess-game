@@ -20,9 +20,6 @@ def print_board(board: Board) -> None:
 
     Parameters:
         board (Board): the current board
-
-    Returns:
-        (None)
     """
     row_num = BOARD_SIZE
     for row in board:
@@ -433,9 +430,6 @@ def update_en_passant_position(move: Move, board: Board, whites_turn: bool) -> O
         move (Move): (from_position, to_position)
         board (Board): the current board.
         whites_turn (bool): True if it's white's turn. False otherwise.
-
-    Returns:
-        (Position / None)
     """
     from_position, to_position = move
     if whites_turn:
